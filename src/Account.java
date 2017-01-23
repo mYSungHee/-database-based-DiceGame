@@ -10,14 +10,6 @@ public class Account {
 	private String sex;
 	private int ban;
 	private int score;
-	
-	public Account(){
-		ban=0;
-		score=0;
-		imgNum=0;
-		sex="³²";
-		
-	}
 	public String getNick() {
 		return nick;
 	}

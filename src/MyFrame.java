@@ -1,17 +1,18 @@
-import javax.swing.*;
-import java.awt.event.*;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
-public class MyFrame extends JFrame {
-	ServerThread svThread;
+public class MyFrame extends JFrame{
 	public MyFrame() {
-		super();
-		getContentPane().setLayout(null);
+		
 		
 	}
-
-	   public MyFrame(ServerThread svThread){
-	    	this();
-	    	this.svThread=svThread;
-	    	
-	    }
+	public void receiveMsg(String msg){
+		
+		JOptionPane.showMessageDialog(this, msg, "¾Ë¸²", JOptionPane.INFORMATION_MESSAGE);
+	}
+	public boolean ck(boolean ck){
+		
+		return ck;
+		
+	}
 }
